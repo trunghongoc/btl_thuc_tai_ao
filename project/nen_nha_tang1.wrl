@@ -1,7 +1,6 @@
 #VRML V2.0 utf8
-# mô tả thềm và thềm
-# thông số( nền 24m,........)
-
+# mô tả nền và bậc thang cửa
+# thông số( nền dài 25.6m,cao 40cm rộng 8m)
 
 # nền
 Transform {
@@ -12,8 +11,7 @@ Transform {
             appearance Appearance {
                 material Material{
                     diffuseColor 0.9 0.9 0.9
-                }
-               
+                }   
             }
         }
     ]
