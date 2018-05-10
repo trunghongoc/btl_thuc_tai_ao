@@ -1,0 +1,20 @@
+#VRML V2.0 utf8
+# mô tả thềm và thềm
+# thông số( nền 24m,........)
+
+
+# nền
+Transform {
+    translation 0 0 0
+    children [
+        Shape {
+            geometry Box { size 24 0.6 8}
+            appearance Appearance {
+                material Material{
+                    diffuseColor 0.9 0.9 0.9
+                }
+               
+            }
+        }
+    ]
+}
