@@ -1,0 +1,80 @@
+#VRML V2.0 utf8
+# mô tả cửa sổ sau tầng 1
+# thông số(dài 1.2m, cao 2.4m)
+
+# kinh
+Transform {
+	children [
+		Shape {
+			appearance Appearance {
+				material  Material {
+					diffuseColor 0 0 0
+					transparency 0.7
+				}
+			}
+			geometry Box {
+				size 0.5 2.2 0.05
+			}
+		}
+	]
+}
+
+# thanh ngang duoi
+Transform {
+    translation 0 -1.1 0
+    children [
+        Shape {
+            geometry Box { size 0.7 0.1 0.1}
+            appearance Appearance {
+                material Material{
+                    diffuseColor 0.9 0.9 0.9
+                }   
+            }
+        }
+    ]
+}
+
+# thanh ngang trên
+Transform {
+    translation 0 1.1 0
+    children [
+        Shape {
+            geometry Box { size 0.7 0.1 0.1}
+            appearance Appearance {
+                material Material{
+                    diffuseColor 0.9 0.9 0.9
+                }   
+            }
+        }
+    ]
+}
+
+# thanh dọc phải
+Transform {
+    translation 0.3 0 0
+    children [
+        Shape {
+            geometry Box { size 0.1 2.1 0.1}
+            appearance Appearance {
+                material Material{
+                    diffuseColor 0.9 0.9 0.9
+                }   
+            }
+        }
+    ]
+}
+
+# thanh dọc trai
+Transform {
+    translation -0.3 0 0
+    children [
+        Shape {
+            geometry Box { size 0.1 2.1 0.1}
+            appearance Appearance {
+                material Material{
+                    diffuseColor 0.9 0.9 0.9
+                }   
+            }
+        }
+    ]
+}
