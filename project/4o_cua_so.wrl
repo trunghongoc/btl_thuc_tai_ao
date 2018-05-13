@@ -1,0 +1,40 @@
+#VRML V2.0 utf8
+# mô tả: 4 ô cửa sổ
+# thông số(dài 2.4m, cao 3.8m, rộng 20cm)
+
+Transform {
+	translation	0 0 0
+	children [
+        # cửa sổ bên trái
+        Transform {
+            translation	0 0 0
+            children [
+                Inline {url "cua_so_truoc_1canh_canh_ben_trai.wrl"}
+            ]
+        }
+
+        # 2 cửa sổ nhỏ bên trên
+        Transform {
+            translation	.89 2 0
+            children [
+                Inline {url "2cua_so_nho_tren_cua_chinh.wrl"}
+            ]
+        }
+
+        # cửa sổ quay
+        Transform {
+            translation	.77 1 -.2
+            children [
+                Inline {url "cua_so_cua_mo.wrl"}
+            ]
+        }
+
+        # cửa sổ bên phải
+        Transform {
+            translation	1.78 0 0
+            children [
+                Inline {url "cua_so_truoc_1canh_canh_ben_phai.wrl"}
+            ]
+        }
+    ]
+}

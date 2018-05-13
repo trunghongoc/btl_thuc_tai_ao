@@ -1,14 +1,14 @@
 #VRML V2.0 utf8
 
 # mô tả: là cửa chính
-# thông số (mỗi cánh cửa rộng 1.2m, cao 2.4m) (chỉ có 1 cánh cửa)
+# thông số (mỗi cánh cửa rộng 1.2m, cao 3.2m) (chỉ có 1 cánh cửa)
 
 # cửa phải
 Transform {
 	translation	-0.21 0 0.2
 	children [	 
 		DEF	SENSOR2 CylinderSensor {
-			maxAngle 3.14
+			maxAngle 2
 			minAngle 0
 		}
 		DEF canhCuaPhai Transform {
@@ -24,7 +24,7 @@ Transform {
 								DEF TD Transform {
 									children [
 										Shape {
-											geometry Box {size 0.07 2.4 0.025}
+											geometry Box {size 0.07 3.2 0.025}
 											appearance Appearance {
 												material Material {
 													diffuseColor 0.9 0.9 0.9
@@ -46,7 +46,7 @@ Transform {
 
 						# thanh ngang (bên trên)
 						Transform {
-							translation	0 1.17 0
+							translation	0 1.57 0
 							children [
 								DEF TN Transform {
 									children [
@@ -65,7 +65,7 @@ Transform {
 
 						# thanh ngang (bên dưới)
 						Transform {
-							translation	0 -1.17 0
+							translation	0 -1.57 0
 							children [
 								USE	TN
 							]
@@ -78,7 +78,7 @@ Transform {
 								Transform {
 									children [
 										Shape {
-											geometry Box {size 1.2 2.4 0.015}
+											geometry Box {size 1.2 3.2 0.015}
 											appearance Appearance {
 												material Material {
 													diffuseColor 0.9 0.9 0.9

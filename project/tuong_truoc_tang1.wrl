@@ -1,0 +1,188 @@
+#VRML V2.0 utf8
+
+# mô tả: các chi tiết ở tường trước tầng 1
+# thông số: chiều dài 25.6m, cao 3.8m, tường rộng 20cm
+
+Transform {
+	translation	0 0 0
+	children [
+        # cột dài: rộng 40cm, cao 3.8m
+        Transform {
+            translation 12.6 0 0
+            children [
+                DEF COT_DAI Transform {
+                    children [
+                        Shape {
+                            geometry Box { size .4 3.8 .2 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 0.670, 0.694, 0.690
+                                }   
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        # cửa mobifone
+        Transform {
+            translation	10.7  0 -.2
+            children [
+                Inline {url "cua_chinh_d4_mobifone.wrl"}
+            ]
+        }
+        
+        # cửa số 2, cạnh cửa mobifone (từ phải qua)
+        Transform {
+            translation	7.2 -.3 -.2
+            children [
+                Inline {url "cua_chinh_d2_voi_cua_so.wrl"}
+            ]
+        }
+
+        # cửa sổ số 3, ô 4 cửa sổ (bên cạnh cửa số 2)
+        Transform {
+            translation	4.65 -.65 0
+            children [
+                Inline {url "4o_cua_so.wrl"}
+            ]
+        }
+
+        # tường dưới 4 ô cửa sổ, dài 2.4m cao 1.2m dày 20cm
+        Transform {
+            translation	5.6 -1.3 0
+            children [
+                DEF TUONG_DUOI_4O_CUA_SO Transform {
+                    children [
+                        Shape {
+                            geometry Box {size 2.4 1.2 0.2}
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.670, 0.694, 0.690
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        # cửa số 4, cạnh 4 ô cửa sổ dòng 72 (từ phải qua)
+        Transform {
+            translation	1.7 -.3 -.2
+            children [
+                Inline {url "cua_chinh_d2_voi_cua_so.wrl"}
+            ]
+        }
+
+        # cửa số 5, cạnh cửa chính dòng 91 (từ phải qua)
+        Transform {
+            translation	-1.15 -.3 -.2
+            children [
+                Inline {url "cua_chinh_d2_voi_cua_so.wrl"}
+            ]
+        }
+
+        # cửa sổ số 6, ô 4 cửa sổ bên cạnh dòng 99
+        Transform {
+            translation	-3.8 -.65 0
+            children [
+                Inline {url "4o_cua_so.wrl"}
+            ]
+        }
+
+        # tường dưới 4 ô cửa sổ, dài 2.4m cao 1.2m dày 20cm
+        Transform {
+            translation	-2.8 -1.3 0
+            children [
+                DEF TUONG_DUOI_4O_CUA_SO Transform {
+                    children [
+                        Shape {
+                            geometry Box {size 2.4 1.2 0.2}
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.670, 0.694, 0.690
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        # tường dài
+        Transform {
+            translation	-4.2 0 0
+            children [
+                USE COT_DAI
+            ]
+        }
+
+        # cửa D4 (bên cạnh cửa cầu thang tận cùng bên trái)
+        Transform {
+            translation	-6.1 0 -.2
+            children [
+                Inline {url "cua_chinh_d4_mobifone.wrl"}
+            ]
+        }
+
+        # tường dài
+        Transform {
+            translation	-7.1 0 0
+            children [
+                USE COT_DAI
+            ]
+        }
+
+        # 4 ô cửa sổ
+        Transform {
+            translation	-9.4 -.65 0
+            children [
+                Inline {url "4o_cua_so.wrl"}
+            ]
+        }
+
+        # tường dưới 4 ô cửa sổ, dài 2.4m cao 1.2m dày 20cm
+        Transform {
+            translation	-8.4 -1.3 0
+            children [
+                DEF TUONG_DUOI_4O_CUA_SO Transform {
+                    children [
+                        Shape {
+                            geometry Box {size 2.4 1.2 0.2}
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.670, 0.694, 0.690
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        # tường dài
+        Transform {
+            translation	-9.75 0 0
+            children [
+                USE COT_DAI
+            ]
+        }
+
+        # cửa D4 cửa cầu thang
+        Transform {
+            translation	-11.7 0 -.2
+            children [
+                Inline {url "cua_chinh_d4_mobifone.wrl"}
+            ]
+        }
+        # tường dài
+        Transform {
+            translation	-12.68 0 0
+            children [
+                USE COT_DAI
+            ]
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+#VRML V2.0 utf8
+
+# mô tả: 2 ô cửa sổ nhỏ bên trên cửa chính
+# thông số: dài 1.2m (mỗi ô là 60cm), cao: 60cm, rộng 4cm
+
+Transform {
+    translation 0 0 0
+    children [
+        # thanh ngang bên dưới, dài 1.2m, cao 6cm, rộng 4cm
+        DEF THANH_NGANG Transform {
+            children [
+                Shape {
+                    geometry Box { size 1.2 .06 .04 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.317, 0.317, 0.317
+                        }   
+                    }
+                }
+            ]  
+        }
+
+        # thanh ngang bên trên, dài 1.2m, cao 6cm, rộng 4cm
+        Transform {
+            translation 0 .54 0
+            children [
+                USE THANH_NGANG
+            ]
+        }
+
+        # thanh dọc 1 từ trái sang, dài 6cm, cao 54cm, rộng 4cm
+        DEF THANH_DOC Transform {
+            translation -.57 .26 0
+            children [
+                Shape {
+                    geometry Box { size .06 .54 .04 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.317, 0.317, 0.317
+                        }   
+                    }
+                }
+            ]  
+        }
+
+        # thanh dọc 2 từ trái sang, dài 6cm, cao 54cm, rộng 4cm
+        Transform {
+            translation .54 0 0
+            children [
+                USE THANH_DOC
+            ]  
+        }
+
+        # thanh dọc 3 từ trái sang, dài 6cm, cao 54cm, rộng 4cm
+        Transform {
+            translation 1.14 0 0
+            children [
+                USE THANH_DOC
+            ]  
+        }
+
+        # kính: dài 1,12 cm, cao: 52cm, dày 1cm
+        Transform {
+            translation 0 .28 0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material  Material {
+                            diffuseColor 0 0 0
+                            transparency 0.7
+                        }
+                    }
+                    geometry Box {
+                        size 1.12 .52 0.01
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -39,6 +39,22 @@ Transform {
                 Inline {url "tuong_phai_tang1.wrl"}
             ]
         }
+
+        # tường trước tầng 1
+        Transform {
+            translation	0 2.2 3.9
+            children [
+                Inline {url "tuong_truoc_tang1.wrl"}
+            ]
+        }
+
+        # tường ngăn cách tầng 1 và tầng 2
+        Transform {
+            translation	0 4.2 0
+            children [
+                Inline {url "tuong_giua_hai_tang.wrl"}
+            ]
+        }
     ]
 }
 

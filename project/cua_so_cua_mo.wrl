@@ -1,15 +1,15 @@
 #VRML V2.0 utf8
 
-# mô tả: là cửa chính số 1 (cửa mobifone cũ)
-# thông số (mỗi cánh cửa rộng 1.2m, cao 3.8m)
+# mô tả: là cửa sổ cửa trước (2 cánh có thể mở)
+# thông số (mỗi cánh cửa rộng 60cm, cao 2m)
 
 # cửa trái
 Transform {
 	translation	-0.8 0 0.2
 	children [
-		DEF	SENSOR1 CylinderSensor {
-			maxAngle   0
-			minAngle  -2
+        DEF	SENSOR1 CylinderSensor {
+			maxAngle  0
+			minAngle  -.6
 		}
 		DEF canhCuaTrai Transform {
 			children [
@@ -18,15 +18,15 @@ Transform {
 					children [
 						# thanh dọc (bên trái)
 						Transform {
-							translation	-0.6 0 0
+							translation	-.29  -.05 0
 							children [
 								DEF TD Transform {
 									children [
 										Shape {
-											geometry Box {size 0.07 3.8 0.025}
+											geometry Box {size .03 1.9 0.025}
 											appearance Appearance {
 												material Material {
-													diffuseColor 0.9 0.9 0.9
+													diffuseColor 0.317, 0.317, 0.317
 												}
 											}
 										}
@@ -37,7 +37,7 @@ Transform {
 
 						# thanh dọc (bên phải)
 						Transform {
-							translation	0.6 0 0
+							translation	.29 -.05 0
 							children [
 								USE	TD
 							]
@@ -45,15 +45,15 @@ Transform {
 
 						# thanh ngang (bên trên)
 						Transform {
-							translation	0 1.87 0
+							translation	0 .9 0
 							children [
 								DEF TN Transform {
 									children [
 										Shape {
-											geometry Box {size 1.2 0.07 0.025}
+											geometry Box {size .6 .03 0.025}
 											appearance Appearance {
 												material Material {
-													diffuseColor 0.9 0.9 0.9
+													diffuseColor 0.317, 0.317, 0.317
 												}
 											}
 										}
@@ -64,7 +64,7 @@ Transform {
 
 						# thanh ngang (bên dưới)
 						Transform {
-							translation	0 -1.87 0
+							translation	0 -1 0
 							children [
 								USE	TN
 							]
@@ -72,29 +72,21 @@ Transform {
 
 						# kính		
 						Transform {
-							translation	0 0 0
+							translation	0 -.05 0
 							children [
 								Transform {
 									children [
 										Shape {
-											geometry Box {size 1.2 3.8 0.015}
+											geometry Box {size .6 1.9 0.015}
 											appearance Appearance {
 												material Material {
-													diffuseColor 0.9 0.9 0.9
+													diffuseColor 0.317, 0.317, 0.317
 													transparency 0.8
 												}
 											}
 										}
 									]
 								}
-							]
-						}
-
-						# tay nắm cửa
-						Transform {
-							translation	0.45 -.12 -.15
-							children [
-								Inline {url "tay_nam_cua_chinh_2tay.wrl"}
 							]
 						}
 					] # end children
@@ -108,20 +100,20 @@ Transform {
 # cửa phải
 Transform {
 	translation	-0.21 0 0.2
-	children [	 
-		DEF	SENSOR2 CylinderSensor {
-			maxAngle 2
-			minAngle 0
+	children [
+        DEF	SENSOR2 CylinderSensor {
+			maxAngle  .6
+			minAngle  0
 		}
 		DEF canhCuaPhai Transform {
-			translation 1.88 0 0
+			translation 0.62 0 0
 			children [
 				Transform {
-					translation	-0.6 0 0
+					translation	0 0 0
 					children [
 						# thanh dọc (bên trái)
 						Transform {
-							translation	-0.6 0 0
+							translation	-.29 -.05 0
 							children [
 								USE	TD
 							]
@@ -129,7 +121,7 @@ Transform {
 
 						# thanh dọc (bên phải)
 						Transform {
-							translation	0.6 0 0
+							translation	.29 -.05 0
 							children [
 								USE	TD
 							]
@@ -137,7 +129,7 @@ Transform {
 
 						# thanh ngang (bên trên)
 						Transform {
-							translation	0 1.87 0
+							translation	0 .9 0
 							children [
 								USE	TN
 							]
@@ -145,7 +137,7 @@ Transform {
 
 						# thanh ngang (bên dưới)
 						Transform {
-							translation	0 -1.87 0
+							translation	0 -1 0
 							children [
 								USE	TN
 							]
@@ -153,29 +145,21 @@ Transform {
 
 						# kính		
 						Transform {
-							translation	0 0 0
+							translation	0 -.05 0
 							children [
 								Transform {
 									children [
 										Shape {
-											geometry Box {size 1.2 3.8 0.015}
+											geometry Box {size .6 1.9 0.015}
 											appearance Appearance {
 												material Material {
-													diffuseColor 0.9 0.9 0.9
+													diffuseColor 0.317, 0.317, 0.317
 													transparency 0.8
 												}
 											}
 										}
 									]
 								}
-							]
-						}
-
-						# tay nắm cửa
-						Transform {
-							translation	-0.45 -.12 -.15
-							children [
-								Inline {url "tay_nam_cua_chinh_2tay.wrl"}
 							]
 						}
 					] # end children

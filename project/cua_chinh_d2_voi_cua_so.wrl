@@ -1,0 +1,87 @@
+#VRML V2.0 utf8
+
+# mô tả: là cửa chính D2 và cửa sổ xung quang cửa này
+# thông số:
+
+Transform {
+	translation	0 0 0
+	children [
+        # cánh cửa
+        Transform {
+            translation	0 0 0
+            children [
+                Inline {url "cua_chinh_d2.wrl"}
+            ]
+        }
+
+        # tường dưới bên trái, dài 1m, cao 1.2m, rộng 20cm
+        DEF TUONG_DUOI Transform {
+            translation	-0.07 -1 .2
+            children [
+                Shape {
+                    geometry Box { size 1 1.2 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # tường dưới bên phải, dài 1m, cao 1.2m, rộng 20cm
+        Transform {
+            translation	2.27 0 0
+            children [
+                USE TUONG_DUOI
+            ]
+        }
+
+        # cột bên trái, cao 2.6m, dài 40m, rộng 20cm
+        DEF COT Transform {
+            translation	-.37 .9 .2
+            children [
+                Shape {
+                    geometry Box { size .4 2.6 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # cột bên phải, cao 2.6m, dài 40m, rộng 20cm
+        Transform {
+            translation	2.87 0 0
+            children [
+                USE COT
+            ]
+        }
+
+        # cửa sổ bên trái
+        Transform {
+            translation	.13 -.36 .2
+            children [
+                Inline {url "cua_so_truoc_1canh.wrl"}
+            ]
+        }
+
+        # cửa sổ bên phải
+        Transform {
+            translation	2 -.36 .2
+            children [
+                Inline {url "cua_so_truoc_1canh.wrl"}
+            ]
+        }
+
+        # 2 ô cửa sổ nhỏ bên trên cửa chính
+        Transform {
+            translation	1.06 1.66 .2
+            children [
+                Inline {url "2cua_so_nho_tren_cua_chinh.wrl"}
+            ]
+        }
+    ]
+}
