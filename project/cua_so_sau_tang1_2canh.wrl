@@ -1,0 +1,19 @@
+#VRML V2.0 utf8
+# mô tả cửa sổ sau tầng 1 (2 cánh)
+# thông số(dài 1.2m, cao 2.4m)
+
+# cánh trái
+Transform {
+    translation	0 0 0
+    children [
+        Inline {url "cua_so_sau_tang1_1canh.wrl"}
+    ]
+}
+
+# cánh phải
+Transform {
+    translation	.6 0 0
+    children [
+        Inline {url "cua_so_sau_tang1_1canh.wrl"}
+    ]
+}

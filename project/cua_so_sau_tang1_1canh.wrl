@@ -1,6 +1,6 @@
 #VRML V2.0 utf8
-# mô tả cửa sổ sau tầng 1
-# thông số(dài 1.2m, cao 2.4m)
+# mô tả cửa sổ sau tầng 1 (1 cánh)
+# thông số(dài 1.2m - 2 cánh, cao 2m)
 
 # kinh
 Transform {
@@ -13,7 +13,7 @@ Transform {
 				}
 			}
 			geometry Box {
-				size 0.5 2.2 0.05
+				size 0.5 2 0.05
 			}
 		}
 	]
@@ -21,7 +21,7 @@ Transform {
 
 # thanh ngang dưới
 Transform {
-    translation 0 -1.1 0
+    translation 0 -1 0
     children [
         DEF THANH_NGANG_CUA_SO Transform {
             children [
@@ -40,7 +40,7 @@ Transform {
 
 # thanh ngang trên
 Transform {
-    translation 0 1.1 0
+    translation 0 1 0
     children [
         USE THANH_NGANG_CUA_SO
     ]
@@ -53,7 +53,7 @@ Transform {
         DEF THANH_DOC_CUA_SO Transform {
             children [
                 Shape {
-                    geometry Box { size 0.1 2.1 0.1}
+                    geometry Box { size 0.1 2 0.1}
                     appearance Appearance {
                         material Material{
                             diffuseColor 0.317, 0.317, 0.317
