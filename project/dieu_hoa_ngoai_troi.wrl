@@ -1,0 +1,19 @@
+#VRML V2.0 utf8
+# mô tả: điều hòa (bên ngoài)
+# thông số: dài 0.7m, rộng 30cm, cao 60cm
+
+# điều hòa
+Transform {
+    translation 0 0 0
+    children [
+		Shape {
+			geometry Box { size 0.7 0.6 0.3}
+			appearance Appearance {
+				material Material{
+					diffuseColor .9 .9 .9
+				}   
+			}
+		}
+	]
+}
+
