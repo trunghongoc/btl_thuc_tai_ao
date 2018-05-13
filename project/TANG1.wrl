@@ -55,6 +55,42 @@ Transform {
                 Inline {url "tuong_giua_hai_tang.wrl"}
             ]
         }
+
+        # tường ngăn cách các phòng
+        Transform {
+            translation	-10 2.2 0
+            children [
+                Inline {url "tuong_trai_tang1.wrl"}
+            ]
+        }
+
+        Transform {
+            translation	-1.6 2.2 0
+            children [
+                Inline {url "tuong_trai_tang1.wrl"}
+            ]
+        }
+
+        Transform {
+            translation	1.6 2.2 0
+            children [
+                Inline {url "tuong_trai_tang1.wrl"}
+            ]
+        }
+
+        Transform {
+            translation	4.5 2.2 0
+            children [
+                Inline {url "tuong_trai_tang1.wrl"}
+            ]
+        }
+
+        Transform {
+            translation	9.5 2.2 0
+            children [
+                Inline {url "tuong_trai_tang1.wrl"}
+            ]
+        }
     ]
 }
 
