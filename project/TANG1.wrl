@@ -7,6 +7,17 @@ Transform {
     translation	0 0 0
     scale .5 .5 .5
     children [
+        NavigationInfo {headlight TRUE}
+        PointLight {
+            on TRUE
+            intensity 1.0
+            ambientIntensity 0.0
+            color 1 1 1		
+            location 0 0 0
+            attenuation 1 0 0
+            radius 100.0
+        }
+
         # nền nhà (tầng 1)
         Transform {
             translation	0 0 0
@@ -137,6 +148,89 @@ Transform {
             translation	-11.3 -.22 4.4
             children [
                 Inline {url "bac_thang_cua_D4.wrl"}
+            ]
+        }
+
+        # quạt trần 1 (từ phải sang)
+        Transform {
+            translation	11 4 1.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	11 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 2 (từ phải sang)
+        Transform {
+            translation	6.7 4 1.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	6.7 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 3 (từ phải sang)
+        Transform {
+            translation	2.4 4 1.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	2.4 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 4 (từ phải sang)
+        Transform {
+            translation	-.2 4 1.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	-.2 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 5 (từ phải sang)
+        Transform {
+            translation	-4 4 1.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	-4 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        Transform {
+            translation	-7 4 1.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	-7 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
             ]
         }
     ]

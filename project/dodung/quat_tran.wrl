@@ -1,0 +1,89 @@
+#VRML V2.0 utf8
+
+DEF	TS TimeSensor {
+	startTime 0 
+	stopTime 500
+	loop TRUE
+}
+DEF	OI OrientationInterpolator {
+	key	[0, .33, .66, 1]
+	keyValue [0 1 0 0, 0 1 0 2.09, 0 1 0 4.18, 0 1 0 6.28]
+}
+
+Group {
+	children [
+		DEF	quattran Transform {
+			translation	0 0 0
+			children [
+				Transform {
+					translation	0 .25 0
+					children [
+						Shape {
+							geometry Cylinder {
+								height .5
+								radius .005
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 1 1
+								}
+							}
+						}
+					]
+				}
+				Shape {
+					geometry Sphere	{
+						radius .05
+					}
+					appearance Appearance {
+						material Material {
+								diffuseColor 0 1 1
+						}
+					}
+				}
+				Transform {
+					scale 1 .2 1
+					children [
+						Shape {
+							geometry Sphere	{
+								radius .1
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 1 1
+								}
+							}
+						}
+					]
+				}
+				Transform {
+					translation	0 0 0.355
+					children [
+						DEF canh Shape {
+							geometry Box {
+								size .15 .005 .5
+							}
+							appearance Appearance {material Material {diffuseColor 0 1 1}}
+						}			
+					]
+				}
+				Transform {
+					rotation 0 1 0 2.09
+					translation	.31 0 -.17
+					children USE canh
+				}
+				Transform {
+					rotation 0 1 0 -2.09
+					translation	-.31 0 -.17
+					children USE canh
+				}
+			]
+		}
+		DEF	T1 TouchSensor {}
+		DEF	T2 TouchSensor {}
+	]
+}
+ROUTE T1.touchTime TO TS.startTime
+ROUTE TS.fraction_changed TO OI.set_fraction
+ROUTE OI.value_changed TO quattran.rotation
+ROUTE T2.touchTime TO TS.stopTime
