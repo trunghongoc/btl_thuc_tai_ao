@@ -2,3 +2,44 @@
 # mô tả: toàn bộ chi tiết tầng 1
 # thông số: chiều rộng 8m, chiều dài 25.6m, chiều cao: 3.6m
 
+
+Transform {
+    translation	0 0 0
+    scale .5 .5 .5
+    children [
+        # nền nhà (tầng 1)
+        Transform {
+            translation	0 0 0
+            children [
+                Inline {url "nen_nha_tang1.wrl"}
+            ]
+        }
+
+        # tường sau (tầng 1)
+        Transform {
+            translation	0 .4 -3.9
+            rotation  0 3.14 0 3.14
+            children [
+                Inline {url "tuong_sau_tang1.wrl"}
+            ]
+        }
+
+        # tường trái, tường số 1 từ bên trái sang (tầng 1)
+        Transform {
+            translation	-12.7 2.2 0
+            children [
+                Inline {url "tuong_trai_tang1.wrl"}
+            ]
+        }
+
+        # tường phải, tường ngoài cùng (tầng 1)
+        Transform {
+            translation	12.7 2.2 0
+            children [
+                Inline {url "tuong_phai_tang1.wrl"}
+            ]
+        }
+    ]
+}
+
+
