@@ -1,0 +1,56 @@
+#VRML V2.0 utf8
+
+# mô tả: là tay nắm cửa chính (tay nắm đầy đủ)
+# thông số: hình trụ bán kính 2.2 cm, dài 42cm
+
+Transform {
+	translation	0 0 0
+	children [
+        # tay nắm bên ngoài
+        Transform {
+            translation	0 0 0
+            children [
+                Inline {url "tay_nam_cua_chinh_1tay.wrl"}
+            ]
+        }
+
+        # tay nắm bên trong
+        Transform {
+            translation	0 0 .3
+            children [
+                Inline {url "tay_nam_cua_chinh_1tay.wrl"}
+            ]
+        }
+
+        # thanh ngang bên dưới
+        DEF THANH_NGANG Transform {
+            children [
+                Transform {
+                    translation	0 0 .15
+                    rotation  0 3.14 3.14 3.14
+                    children [
+                        Shape {
+                            geometry Cylinder {
+                                height .28
+                                radius .012
+                            }
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.611, 0.596, 0.603
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        # thanh ngang bên trên
+        Transform {
+            translation	0 .22 0
+            children [
+                USE THANH_NGANG
+            ]
+        }
+    ]
+}

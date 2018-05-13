@@ -90,25 +90,17 @@ Transform {
 							]
 						}
 
-						# nam cua
+						# tay nắm cửa
 						Transform {
-							translation	0.4 0 0.03
+							translation	0.45 -.12 -.15
 							children [
-								Shape {
-									geometry Sphere	{radius 0.04}
-									appearance Appearance {
-										material Material {
-											diffuseColor 0.85 0.85 0.85
-										}
-									}
-								}
+								Inline {url "tay_nam_cua_chinh_2tay.wrl"}
 							]
 						}
 					] # end children
 				} # end Transform
 			] # end children (cấp 1 cửa trái)
 		} # end cửa trái
-
 	] # end children
 }
 
@@ -179,18 +171,11 @@ Transform {
 							]
 						}
 
-						# nam cua
+						# tay nắm cửa
 						Transform {
-							translation	-0.4 0 0.03
+							translation	-0.45 -.12 -.15
 							children [
-								Shape {
-									geometry Sphere	{radius 0.04}
-									appearance Appearance {
-										material Material {
-											diffuseColor 0.85 0.85 0.85
-										}
-									}
-								}
+								Inline {url "tay_nam_cua_chinh_2tay.wrl"}
 							]
 						}
 					] # end children

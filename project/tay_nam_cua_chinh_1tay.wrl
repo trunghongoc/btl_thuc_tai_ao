@@ -1,0 +1,59 @@
+#VRML V2.0 utf8
+
+# mô tả: là tay nắm cửa chính (1 tay nắm)
+# thông số: hình trụ bán kính 2.2 cm, dài 42cm
+
+Transform {
+	translation	0 0 0
+	children [
+        DEF TAY_NAM_INOX Transform {
+            children [
+                Transform {
+                    translation	0 0 0
+                    children [
+                        Shape {
+                            geometry Cylinder {
+                                height .08
+                                radius .022
+                            }
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.611, 0.596, 0.603
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        Transform {
+            translation 0 .22 0
+            children [
+                USE TAY_NAM_INOX
+            ]
+        }
+
+        Transform {
+            children [
+                Transform {
+                    translation	0 .11 0
+                    children [
+                        Shape {
+                            geometry Cylinder {
+                                height .26
+                                radius .022
+                            }
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.611, 0.596, 0.603
+                                    transparency 0.8
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
