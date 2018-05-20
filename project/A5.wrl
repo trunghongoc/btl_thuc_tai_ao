@@ -2,7 +2,8 @@
 # mô tả: toàn bộ chi tiết tòa nhà A5
 
 Transform {
-    translation	0 0 0
+    translation	0 -3 0
+    scale .7 .7 .7
     children [
         # tầng 1
         Transform {
