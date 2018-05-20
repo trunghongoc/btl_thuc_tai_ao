@@ -28,5 +28,13 @@ Transform {
                 Inline {url "TANG2.wrl"}
             ]
         }
+
+        # tầng 4
+        Transform {
+            translation	0 6.4 0
+            children [
+                Inline {url "TANG4.wrl"}
+            ]
+        }
     ]
 }

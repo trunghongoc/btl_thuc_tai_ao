@@ -1,0 +1,85 @@
+#VRML V2.0 utf8
+# mô tả: toàn bộ chi tiết tầng 4 (trần)
+# thông số: chiều rộng 8m, chiều dài 25.4m, chiều cao: 1.2m
+
+Transform {
+    translation	0 0 0
+    scale .5 .5 .5
+    children [
+        # tường sau
+        Transform {
+            translation 0 0 -3.9
+            children [
+                Shape {
+                    geometry Box { size 25.4 1.2 .2}
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # tường trái
+        Transform {
+            translation -12.7 0 0
+            children [
+                Shape {
+                    geometry Box { size .2 1.2 7.8}
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # tường phải
+        Transform {
+            translation 12.7 0 0
+            children [
+                Shape {
+                    geometry Box { size .2 1.2 7.8}
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # tường trước
+        Transform {
+            translation 0 0 3.9
+            children [
+                Shape {
+                    geometry Box { size 25.6 1.2 .2}
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # trần
+        Transform {
+            translation 0 .6 0
+            children [
+                Shape {
+                    geometry Box { size 25.8 .16 8.4}
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.223 0.278 0.313
+                            # diffuseColor 1 1 1
+                        }   
+                    }
+                }
+            ]
+        }
+    ]
+}
