@@ -1,0 +1,343 @@
+#VRML V2.0 utf8
+# mô tả: toàn bộ chi tiết tầng 1
+# thông số: chiều rộng 8m, chiều dài 25.6m, chiều cao: 3.8m
+
+
+Transform {
+    translation	0 0 0
+    scale .5 .5 .5
+    children [
+        NavigationInfo {headlight TRUE}
+        PointLight {
+            on TRUE
+            intensity 1.0
+            ambientIntensity 0.0
+            color 1 1 1		
+            location 0 0 0
+            attenuation 1 0 0
+            radius 100.0
+        }
+
+        # nền nhà (tầng 1)
+        # Transform {
+        #     translation	0 0 0
+        #     children [
+        #         Inline {url "nen_nha_tang1.wrl"}
+        #     ]
+        # }
+
+        # tường sau (tầng 1)
+        Transform {
+            translation	0 .4 -3.9
+            rotation  0 3.14 0 3.14
+            children [
+                Inline {url "tuong_sau_tang1.wrl"}
+            ]
+        }
+
+        # tường trái, tường số 1 từ bên trái sang (tầng 1)
+        Transform {
+            translation	-12.7 2.2 0
+            children [
+                Inline {url "tuong_trai_tang1.wrl"}
+            ]
+        }
+
+        # tường phải, tường ngoài cùng (tầng 1)
+        Transform {
+            translation	12.7 2.2 0
+            children [
+                Inline {url "tuong_phai_tang2.wrl"}
+            ]
+        }
+
+        # tường trước tầng 2
+        # Transform {
+        #     translation	0 2.2 3.9
+        #     children [
+        #         Inline {url "tuong_truoc_tang2.wrl"}
+        #     ]
+        # }
+
+        # tường ngăn cách tầng 1 và tầng 2
+        # Transform {
+        #     translation	0 4.2 0
+        #     children [
+        #         Inline {url "tuong_giua_hai_tang.wrl"}
+        #     ]
+        # }
+
+        # tường ngăn cách các phòng 1 (từ trái sang)
+        Transform {
+            translation	-10 2.2 0
+            children [
+                Inline {url "tuong_ngan_cach_phong.wrl"}
+            ]
+        }
+        # tường trước cửa phòng 1 (từ trái sang) - tường dưới
+        Transform {
+            translation -7.1 .9 2.1
+            children [
+                Shape {
+                    geometry Box { size 5.7 1.2 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+        # cửa chính trước phòng 1 (từ trái sang)
+        Transform {
+            translation	-3.4 2.2 1.9
+            children [
+                Inline {url "cua_chinh_d4_mobifone.wrl"}
+            ]
+        }
+        # tường trước trái phòng 1 (từ trái sang): dài 2m cao 2m6, dày 20cm
+        Transform {
+            translation -9.1 2.8 2.1
+            children [
+                Shape {
+                    geometry Box { size 2 2.6 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+        # cửa sổ trước phòng 1 (từ trái sang)
+        Transform {
+            translation -7.6 2.6 2.1
+            children [
+                Inline {url "cua_so_sau_tang1_2canh.wrl"}
+            ]
+        }
+        # tường trước phải phòng 1 (từ trái sang): dài 2.35m cao 2m6, dày 20cm - bên phải
+        Transform {
+            translation -5.4 2.8 2.1
+            children [
+                Shape {
+                    geometry Box { size 2.35 2.6 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+        # tường trên phòng 1 (từ trái sang): dài 70cm cao 70cm, dày 20cm
+        Transform {
+            translation -7.3 3.9 2.1
+            children [
+                Shape {
+                    geometry Box { size 1.6 .4 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+
+        # tường ngăn cách các phòng 2 (từ trái sang)
+        Transform {
+            translation	-1.6 2.2 0
+            children [
+                Inline {url "tuong_ngan_cach_phong.wrl"}
+            ]
+        }
+        # cửa chính trước phòng 1 (từ trái sang)
+        Transform {
+            translation	2.7 2.2 1.9
+            children [
+                Inline {url "cua_chinh_d4_mobifone.wrl"}
+            ]
+        }
+        # tường trước trái phòng 2 (từ trái sang): dài 2m cao 2m6, dày 20cm
+        Transform {
+            translation .1 2.2 2.1
+            children [
+                Shape {
+                    geometry Box { size 3.5 3.8 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+
+        # tường ngăn cách các phòng 3 (từ trái sang)
+        Transform {
+            translation	4.5 2.2 0
+            children [
+                Inline {url "tuong_ngan_cach_phong.wrl"}
+            ]
+        }
+        # cửa chính trước phòng 3 (từ trái sang)
+        Transform {
+            translation	10.9 2.2 1.9
+            children [
+                Inline {url "cua_chinh_d4_mobifone.wrl"}
+            ]
+        }
+        # tường trước cửa phòng 1 (từ trái sang) - tường dưới
+        Transform {
+            translation 7.3 .9 2.1
+            children [
+                Shape {
+                    geometry Box { size 5.5 1.2 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+        # tường trước trái phòng 3 (từ trái sang): dài 2m cao 2m6, dày 20cm
+        Transform {
+            translation 5.4 2.8 2.1
+            children [
+                Shape {
+                    geometry Box { size 2 2.6 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+        # cửa sổ trước phòng 3 (từ trái sang)
+        Transform {
+            translation 6.8 2.6 2.1
+            children [
+                Inline {url "cua_so_sau_tang1_2canh.wrl"}
+            ]
+        }
+        # tường trước phải phòng 3 (từ trái sang): dài 2.35m cao 2m6, dày 20cm - bên phải
+        Transform {
+            translation 8.95 2.8 2.1
+            children [
+                Shape {
+                    geometry Box { size 2.2 2.6 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+        # tường trên phòng 3 (từ trái sang): dài 70cm cao 70cm, dày 20cm
+        Transform {
+            translation 7.2 3.9 2.1
+            children [
+                Shape {
+                    geometry Box { size 1.6 .4 .2 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # quạt trần 1 (từ phải sang)
+        Transform {
+            translation	11 4 .5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	11 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 2 (từ phải sang)
+        Transform {
+            translation	6.7 4 .5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	6.7 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 3 (từ phải sang)
+        Transform {
+            translation	2.4 4 .5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	2.4 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 4 (từ phải sang)
+        Transform {
+            translation	-.2 4 .5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	-.2 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 5 (từ phải sang)
+        Transform {
+            translation	-4 4 .5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	-4 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+
+        # quạt trần 6 (từ phải sang)
+        Transform {
+            translation	-7 4 .5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+        Transform {
+            translation	-7 4 -2.5
+            children [
+                Inline {url "dodung/quat_tran.wrl"}
+            ]
+        }
+    ]
+}
+
+

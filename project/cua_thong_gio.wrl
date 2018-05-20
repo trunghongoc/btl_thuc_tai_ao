@@ -1,0 +1,90 @@
+#VRML V2.0 utf8
+# mô tả: cửa thông gió cầu thang
+# thông số: chiều dài 2.4m, cao 3.8m, rộng 20cm
+
+Transform {
+    translation	0 0 0
+    children [
+        # cột trái: dài 20cm, cao 3.8m, dày 16cm
+        DEF COT_DAI Transform {
+            translation 0 0 0
+            children [
+                Shape {
+                    geometry Box { size .2 3.8 .16 }
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.670, 0.694, 0.690
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # cột phải
+        Transform {
+            translation 2.2 0 0
+            children [
+                USE COT_DAI
+            ]
+        }
+
+        # tường dưới
+        Transform {
+            translation	1.09 -1.3 0
+            children [
+                DEF TUONG_DUOI_4O_CUA_SO Transform {
+                    children [
+                        Shape {
+                            geometry Box {size 2.03 1.2 0.16}
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.670, 0.694, 0.690
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        # hàng dấu cộng 1 (từ trên xuống)
+        Transform {
+            translation 0 0 0
+            children [
+                Inline {url "hang_dau_cong.wrl"}
+            ]
+        }
+
+        # hàng dấu cộng 2 (từ trên xuống)
+        Transform {
+            translation 0 -.55 0
+            children [
+                Inline {url "hang_dau_cong.wrl"}
+            ]
+        }
+
+        # hàng dấu cộng 3 (từ trên xuống)
+        Transform {
+            translation 0 -1.1 0
+            children [
+                Inline {url "hang_dau_cong.wrl"}
+            ]
+        }
+
+        # hàng dấu cộng 4 (từ trên xuống)
+        Transform {
+            translation 0 -1.65 0
+            children [
+                Inline {url "hang_dau_cong.wrl"}
+            ]
+        }
+
+        # hàng dấu cộng 5 (từ trên xuống)
+        Transform {
+            translation 0 -2.2 0
+            children [
+                Inline {url "hang_dau_cong.wrl"}
+            ]
+        }
+    ]
+}

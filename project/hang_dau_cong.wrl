@@ -1,0 +1,80 @@
+#VRML V2.0 utf8
+# mô tả: 1 hàng dấu cộng của cửa thông gió cầu thang
+# thông số:
+
+Transform {
+    translation	0 0 0
+    children [
+        # dấu cộng: dài 40, cao 40, dày 10cm
+        DEF DAU_CONG Transform {
+            translation .3 1.7 0
+            children [
+                Transform {
+                    translation	0 0 0
+                    children [
+                        Shape {
+                            geometry Box { size .05 .4 .05 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 1 1 1
+                                }   
+                            }
+                        }
+                    ]
+                }
+                
+                Transform {
+                    translation	0 0 0
+                    rotation  3.14 3.14 0 3.14
+                    children [
+                        Shape {
+                            geometry Box { size .05 .4 .05 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 1 1 1
+                                }   
+                            }
+                        }
+                    ]
+                }
+
+                Transform {
+                    translation	0 0 0
+                    children [
+                        Shape {
+                            geometry Box { size .15 .15 .1 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 1 1 1
+                                }   
+                            }
+                        }
+                    ]
+                }
+                
+            ]
+        }
+
+        # 
+        Transform {
+            translation .55 0 0
+            children [
+                USE DAU_CONG
+            ]
+        }
+
+        Transform {
+            translation 1.1 0 0
+            children [
+                USE DAU_CONG
+            ]
+        }
+
+        Transform {
+            translation 1.6 0 0
+            children [
+                USE DAU_CONG
+            ]
+        }
+    ]
+}

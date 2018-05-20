@@ -1,0 +1,115 @@
+#VRML V2.0 utf8
+# mô tả: tường trước tầng 2
+# thông số: chiều rộng 8m, chiều dài 25.6m, chiều cao: 3.8m
+
+Transform {
+	translation	0 0 0
+    # scale .6 .6 .6
+	children [
+        # cột dài: rộng 40cm, cao 3.8m (demo)
+        Transform {
+            translation 12.6 0 0
+            children [
+                DEF COT_DAI Transform {
+                    children [
+                        Shape {
+                            geometry Box { size .4 3.8 .2 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 0.670, 0.694, 0.690
+                                }   
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        # cửa số 1 từ phải sang
+        Transform {
+            translation 10.3 -.65 0
+            children [
+                Inline {url "cua_so_va_tuong_duoi.wrl"}
+            ]
+        }
+        
+        # cửa số 2 từ phải sang
+        Transform {
+            translation 7.4 -.65 0
+            children [
+                Inline {url "cua_so_va_tuong_duoi.wrl"}
+            ]
+        }
+
+        # cửa số 3 từ phải sang
+        Transform {
+            translation 4.85 -.65 0
+            children [
+                Inline {url "cua_so_va_tuong_duoi.wrl"}
+            ]
+        }
+
+        # cửa số 4 từ phải sang
+        Transform {
+            translation 2 -.65 0
+            children [
+                Inline {url "cua_so_va_tuong_duoi.wrl"}
+            ]
+        }
+
+        # cửa số 5 từ phải sang
+        Transform {
+            translation -.9 -.65 0
+            children [
+                Inline {url "cua_so_va_tuong_duoi.wrl"}
+            ]
+        }
+
+        # cửa số 6 từ phải sang
+        Transform {
+            translation -3.65 -.65 0
+            children [
+                Inline {url "cua_so_va_tuong_duoi.wrl"}
+            ]
+        }
+
+        # cửa số 7 từ phải sang
+        Transform {
+            translation -6.5 -.65 0
+            children [
+                Inline {url "cua_so_va_tuong_duoi.wrl"}
+            ]
+        }
+
+        # cửa số 8 từ phải sang
+        Transform {
+            translation -9.3 -.65 0
+            children [
+                Inline {url "cua_so_va_tuong_duoi.wrl"}
+            ]
+        }
+
+        # tường dài
+        Transform {
+            translation	-9.75 0 0
+            children [
+                USE COT_DAI
+            ]
+        }
+
+        # cửa thông gió cầu thang
+        Transform {
+            translation	-12.3 0 0
+            children [
+                Inline {url "cua_thong_gio.wrl"}
+            ]
+        }
+        # tường dài
+        Transform {
+            translation	-12.6 0 0
+            children [
+                USE COT_DAI
+            ]
+        }
+    ]
+}

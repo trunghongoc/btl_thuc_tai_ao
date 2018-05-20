@@ -1,0 +1,55 @@
+#VRML V2.0 utf8
+# mô tả: cửa sổ 4 cánh và tường dưới, và cột bên phải
+# thông số:
+
+Transform {
+    translation	0 0 0
+    children [
+        # cửa sổ
+        Transform {
+            translation	0 0 0
+            children [
+                Inline {url "4o_cua_so.wrl"}
+            ]
+        }
+
+        # tường dưới
+        Transform {
+            translation	.9 -.65 0
+            children [
+                DEF TUONG_DUOI_4O_CUA_SO Transform {
+                    children [
+                        Shape {
+                            geometry Box {size 2.6 1.2 0.2}
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.670, 0.694, 0.690
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        # cột dài: rộng 40cm, cao 3.8m
+        Transform {
+            translation 2.33 .65 0
+            children [
+                DEF COT_DAI Transform {
+                    children [
+                        Shape {
+                            geometry Box { size .4 3.8 .2 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 0.670, 0.694, 0.690
+                                }   
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

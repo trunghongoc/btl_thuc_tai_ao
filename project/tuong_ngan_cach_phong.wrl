@@ -1,13 +1,12 @@
 #VRML V2.0 utf8
-# mô tả tường phải
-# thông số(dài 8m, rộng 20cm, cao 3.8m)
+# mô tả: tường ngăn cách các phòng với nhau
+# thông số (dài 6.2m, rộng 20cm, cao 3.8m)
 
-# tường trái
 Transform {
-    translation 0 0 0
+    translation 0 0 -.9
     children [
         Shape {
-            geometry Box { size 0.2 3.8 8 }
+            geometry Box { size 0.2 3.8 6.2 }
             appearance Appearance {
                 material Material{
                     diffuseColor 0.670, 0.694, 0.690
