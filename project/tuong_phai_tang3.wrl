@@ -101,16 +101,6 @@ Transform {
     ]
 }
 
-# biển A5
-Transform {
-    translation	.1 -1.25 2.75
-    rotation 0 1 0 1.57
-    children [
-        Inline {url "bien_a5.wrl"}
-    ]
-}
-
-
 # tường in chữ
 Transform {
     translation 0 0 -.8

@@ -1,0 +1,38 @@
+#VRML V2.0 utf8
+# mô tả: biển nhà A5
+
+Shape {
+    geometry Box{ size 1 1 .1 }
+    appearance Appearance {
+        material Material {
+            diffuseColor 0 .28 .85
+            specularColor .03 .05 .1
+            emissiveColor 0 .03 .1
+            ambientIntensity .0933
+            shininess .08
+        }
+    }	
+}
+
+Transform {
+	translation	0 -.19 .055
+	children [
+        Shape {
+            geometry Text {
+                string ["A5"]
+                fontStyle FontStyle {
+                    size .5
+                    family "ARIAL"
+                    style "BOLD"
+                    spacing 1
+                    justify "MIDDLE"
+                    horizontal TRUE
+                    leftToRight TRUE
+                    topToBottom TRUE
+                }
+                length [.5]
+                maxExtent 5.0
+            }
+        }
+    ]
+}
