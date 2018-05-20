@@ -6,11 +6,12 @@ Transform {
     translation 0 0 0
     # scale .5 .5 .5
     children [
-        # nền
+        # nền to
         Transform {
+            translation 1.4 0 0
             children [
                 Shape {
-                    geometry Box { size 26 0.16 8}
+                    geometry Box { size 23 .16 8}
                     appearance Appearance {
                         material Material{
                             diffuseColor 0.223 0.278 0.313
@@ -20,27 +21,42 @@ Transform {
             ]
         }
 
-        # ở giữa
+        # nền trước
         Transform {
-            translation .1 .6 0
+            translation -11.5 0 2.6
             children [
                 Shape {
-                    geometry Box { size 25.6 1.2 7.6}
+                    geometry Box { size 2.8 .16 2.8}
                     appearance Appearance {
                         material Material{
-                            diffuseColor 0.670, 0.694, 0.690
+                            diffuseColor 0.223 0.278 0.313
                         }   
                     }
                 }
             ]
         }
 
-        # trần
+        # tường dọc
         Transform {
-            translation 0 1.3 0
+            translation -12.75 0 -1.4
             children [
                 Shape {
-                    geometry Box { size 26 0.16 8}
+                    geometry Box { size .3 .16 5.2}
+                    appearance Appearance {
+                        material Material{
+                            diffuseColor 0.223 0.278 0.313
+                        }   
+                    }
+                }
+            ]
+        }
+
+        # tường sau
+        Transform {
+            translation -11.5 0 -3.8
+            children [
+                Shape {
+                    geometry Box { size 2.8 .16 .4}
                     appearance Appearance {
                         material Material{
                             diffuseColor 0.223 0.278 0.313

@@ -2,7 +2,6 @@
 # mô tả: toàn bộ chi tiết tầng 1
 # thông số: chiều rộng 8m, chiều dài 25.6m, chiều cao: 3.8m
 
-
 Transform {
     translation	0 0 0
     scale .5 .5 .5
@@ -153,13 +152,13 @@ Transform {
 
         # quạt trần 1 (từ phải sang)
         Transform {
-            translation	11 4 1.5
+            translation	11 3.7 1.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	11 4 -2.5
+            translation	11 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -167,13 +166,13 @@ Transform {
 
         # quạt trần 2 (từ phải sang)
         Transform {
-            translation	6.7 4 1.5
+            translation	6.7 3.7 1.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	6.7 4 -2.5
+            translation	6.7 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -181,13 +180,13 @@ Transform {
 
         # quạt trần 3 (từ phải sang)
         Transform {
-            translation	2.4 4 1.5
+            translation	2.4 3.7 1.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	2.4 4 -2.5
+            translation	2.4 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -195,13 +194,13 @@ Transform {
 
         # quạt trần 4 (từ phải sang)
         Transform {
-            translation	-.2 4 1.5
+            translation	-.2 3.7 1.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	-.2 4 -2.5
+            translation	-.2 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -209,26 +208,26 @@ Transform {
 
         # quạt trần 5 (từ phải sang)
         Transform {
-            translation	-4 4 1.5
+            translation	-4 3.7 1.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	-4 4 -2.5
+            translation	-4 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
 
         Transform {
-            translation	-7 4 1.5
+            translation	-7 3.7 1.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	-7 4 -2.5
+            translation	-7 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]

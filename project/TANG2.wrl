@@ -52,20 +52,20 @@ Transform {
         }
 
         # tường trước tầng 2
-        # Transform {
-        #     translation	0 2.2 3.9
-        #     children [
-        #         Inline {url "tuong_truoc_tang2.wrl"}
-        #     ]
-        # }
+        Transform {
+            translation	0 2.2 3.9
+            children [
+                Inline {url "tuong_truoc_tang2.wrl"}
+            ]
+        }
 
-        # tường ngăn cách tầng 1 và tầng 2
-        # Transform {
-        #     translation	0 4.2 0
-        #     children [
-        #         Inline {url "tuong_giua_hai_tang.wrl"}
-        #     ]
-        # }
+        # tường ngăn cách tầng 2 và 3 (trần)
+        Transform {
+            translation	0 4.2 0
+            children [
+                Inline {url "tuong_giua_hai_tang.wrl"}
+            ]
+        }
 
         # tường ngăn cách các phòng 1 (từ trái sang)
         Transform {
@@ -256,13 +256,13 @@ Transform {
 
         # quạt trần 1 (từ phải sang)
         Transform {
-            translation	11 4 .5
+            translation	11 3.7 .5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	11 4 -2.5
+            translation	11 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -270,13 +270,13 @@ Transform {
 
         # quạt trần 2 (từ phải sang)
         Transform {
-            translation	6.7 4 .5
+            translation	6.7 3.7 .5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	6.7 4 -2.5
+            translation	6.7 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -284,13 +284,13 @@ Transform {
 
         # quạt trần 3 (từ phải sang)
         Transform {
-            translation	2.4 4 .5
+            translation	2.4 3.7 .5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	2.4 4 -2.5
+            translation	2.4 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -298,13 +298,13 @@ Transform {
 
         # quạt trần 4 (từ phải sang)
         Transform {
-            translation	-.2 4 .5
+            translation	-.2 3.7 .5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	-.2 4 -2.5
+            translation	-.2 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -312,13 +312,13 @@ Transform {
 
         # quạt trần 5 (từ phải sang)
         Transform {
-            translation	-4 4 .5
+            translation	-4 3.7 .5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	-4 4 -2.5
+            translation	-4 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
@@ -326,13 +326,13 @@ Transform {
 
         # quạt trần 6 (từ phải sang)
         Transform {
-            translation	-7 4 .5
+            translation	-7 3.7 .5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]
         }
         Transform {
-            translation	-7 4 -2.5
+            translation	-7 3.7 -2.5
             children [
                 Inline {url "dodung/quat_tran.wrl"}
             ]

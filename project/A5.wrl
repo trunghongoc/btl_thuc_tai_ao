@@ -1,0 +1,31 @@
+#VRML V2.0 utf8
+# mô tả: toàn bộ chi tiết tòa nhà A5
+
+Transform {
+    translation	0 0 0
+    children [
+        # tầng 1
+        Transform {
+            translation	0 0 0
+            children [
+                Inline {url "TANG1.wrl"}
+            ]
+        }
+
+        # tầng 2
+        Transform {
+            translation	0 2 0
+            children [
+                Inline {url "TANG2.wrl"}
+            ]
+        }
+
+        # tầng 3
+        Transform {
+            translation	0 4 0
+            children [
+                Inline {url "TANG2.wrl"}
+            ]
+        }
+    ]
+}
