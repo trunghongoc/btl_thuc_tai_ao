@@ -2,7 +2,7 @@
 # mô tả: toàn bộ chi tiết tòa nhà A5
 
 Transform {
-    translation	0 -3 0
+    translation	0 -2 0
     scale .7 .7 .7
     children [
         # tầng 1
@@ -37,4 +37,39 @@ Transform {
             ]
         }
     ]
+}
+
+# Background {
+#     skyAngle	[ 0.075, 0.1, 0.2, 1.309, 1.5708 ]					   #  thiết lập
+#     skyColor	[ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ] #  bầu trời
+#     groundAngle [ 0.75, 1.4, 1.5, 1.5708 ]								# thiết lập
+#     groundColor [ .16 .5 0, .16 .5 0, .36 .7 .2, .46 .8 .3, .66 1 .5 ]	# nền
+# }
+
+Background {
+    skyColor [ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
+    skyAngle [ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
+    groundColor [ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
+    groundAngle [ 0.75, 1.4, 1.5, 1.5708 ]
+    backUrl [ ]
+    bottomUrl [ ]
+    leftUrl [ ]
+    rightUrl [ ]
+    frontUrl [ ]
+    topUrl [ ]
+}
+
+# ánh sáng chiếu vào phía trước
+DirectionalLight {
+	direction 0 0 1
+	intensity 0.65
+	#ambientIntensity 0.1
+	color 1 1 1
+}
+
+# ánh sáng chiếu vào phía sau
+DirectionalLight {
+	direction 0 0 -1
+	intensity 0.3
+	color 1 1 1
 }
