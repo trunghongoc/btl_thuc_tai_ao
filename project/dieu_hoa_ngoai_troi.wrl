@@ -9,9 +9,10 @@ Transform {
 		Shape {
 			geometry Box { size 0.7 0.6 0.3}
 			appearance Appearance {
-				material Material{
-					diffuseColor .9 .9 .9
-				}   
+				# material Material{
+				# 	diffuseColor .9 .9 .9
+				# }   
+				texture	ImageTexture {url "img/dieu_hoa.png"}
 			}
 		}
 	]
