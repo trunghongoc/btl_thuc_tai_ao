@@ -1,0 +1,56 @@
+#VRML V2.0 utf8
+# mô tả: dấu cộng cửa thông gió
+
+Transform {
+    translation	0 0 0
+    children [
+        DEF DAU_CONG Transform {
+            translation .3 1.7 0
+            children [
+                Transform {
+                    translation	0 0 0
+                    children [
+                        Shape {
+                            geometry Box { size .05 .4 .05 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 1 1 1
+                                }   
+                            }
+                        }
+                    ]
+                }
+                
+                Transform {
+                    translation	0 0 0
+                    rotation  3.14 3.14 0 3.14
+                    children [
+                        Shape {
+                            geometry Box { size .05 .4 .05 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 1 1 1
+                                }   
+                            }
+                        }
+                    ]
+                }
+
+                Transform {
+                    translation	0 0 0
+                    children [
+                        Shape {
+                            geometry Box { size .15 .15 .1 }
+                            appearance Appearance {
+                                material Material{
+                                    diffuseColor 1 1 1
+                                }   
+                            }
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ]
+}

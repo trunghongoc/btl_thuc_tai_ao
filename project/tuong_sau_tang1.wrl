@@ -55,17 +55,17 @@ Transform {
 Transform {
     translation	10.8 2.2 0
     children [
-        Inline {url "cua_so_sau_tang1_2canh.wrl"}
+        Inline {url "cua_thong_gio_tuong_sau.wrl"}
     ]
 }
 
 # điều hòa số 1 (từ phải sang)
-Transform {
-    translation	11.1 .5 .22
-    children [
-        Inline {url "dieu_hoa_ngoai_troi.wrl"}
-    ]
-}
+# Transform {
+#     translation	11.1 .5 .22
+#     children [
+#         Inline {url "dieu_hoa_ngoai_troi.wrl"}
+#     ]
+# }
 
 # tường ngăn cách cửa sổ 1 (từ phải qua trái), rộng 1.4m
 Transform {

@@ -59,6 +59,14 @@ Transform {
             ]
         }
 
+        # cầu thang
+        Transform {
+            translation	-10.75 0 1.15
+            children [
+                Inline {url "cau_thang_tang2.wrl"}
+            ]
+        }
+
         # tường ngăn cách tầng 2 và 3 (trần)
         Transform {
             translation	0 4.2 0
