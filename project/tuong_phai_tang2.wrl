@@ -129,3 +129,17 @@ Transform {
         }
     ]
 }
+
+# chữ trên tường
+Transform {
+    translation 0.06 0 -1
+    children [
+        Shape {
+            geometry Box { size 0.01 3.2 5.1 }
+            appearance Appearance {
+                texture	ImageTexture {url "img/1.png"}  
+            }
+        }
+    ]
+}
+
