@@ -1,0 +1,123 @@
+#VRML V2.0 utf8
+
+############## cot tru vuong
+Transform	{
+	children [
+		Shape {
+			geometry Box {size .6 4 .6}
+			appearance Appearance {	
+				texture	ImageTexture { url "images/mau2.jpg"}
+				#material Material { diffuseColor 0.52549 0.52549 0.52549 }
+			}
+		}
+	]
+}
+
+## thanh chu nhat dai
+Transform	{
+	#translation	0 1.5 2.1
+	children [
+		Shape {
+			geometry Box {size .5 3 .61}
+			appearance Appearance {	
+				texture	ImageTexture { url "images/mau5.jpg"}
+				#material Material { diffuseColor 0.52549 0.52549 0.52549 }
+			}
+		}
+	]
+}
+
+########### thanh tron nho
+Transform	{	
+	translation	0 1.5 0
+	rotation 1 0 0 1.571 
+	children [
+		DEF thanhtron Transform {			
+			children [
+				Shape {
+					geometry Cylinder { radius .18 height .62 }
+					appearance Appearance {	
+						texture	ImageTexture { url "images/mau6.jpg"}
+					}
+				}
+			]
+		}		
+	]
+}
+
+Transform	{
+	translation	0 -1.5 0
+	rotation 1 0 0 1.571 
+	children [
+		USE	thanhtron
+	]
+}
+	  
+
+### hinh ben tren
+
+Transform	{
+	translation	0 2 0
+	children [
+		Shape {
+			geometry Box {size .74 .16 .74}
+			appearance Appearance {	
+				texture	ImageTexture { url "images/mau2.jpg"}				
+			}
+		}
+	]
+}
+
+Transform	{
+	translation	0 2.16 0
+	children [
+		Shape {
+			geometry Box {size .9 .16 .9 }
+			appearance Appearance {	
+				texture	ImageTexture { url "images/mau2.jpg"}				
+			}
+		}
+	]
+}
+
+#### hình tròn bên trên 
+
+# cột nhỏ 
+Transform	{
+	translation	0 2.36 0
+	children [
+		Shape {
+			geometry Box {size .08 .24 .08 }
+			appearance Appearance {	
+				texture	ImageTexture { url "images/mau6.jpg"}				
+			}
+		}
+	]
+}
+
+# tron ngang
+Transform	{
+	translation	0 2.5 0
+	children [
+		Shape {
+			geometry Cylinder {radius .24 height .05}
+			appearance Appearance {	
+				texture	ImageTexture { url "images/mau6.jpg"}				
+			}
+		}
+	]
+}
+
+# quả cầu tròn
+Transform	{
+	translation	0 2.9 0
+	scale 1 2 1
+	children [
+		Shape {
+			geometry Sphere { radius .2}
+			appearance Appearance {	
+				texture	ImageTexture { url "images/mau2.jpg"}				
+			}
+		}
+	]
+}

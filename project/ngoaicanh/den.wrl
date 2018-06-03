@@ -1,0 +1,93 @@
+#VRML V2.0 utf8
+
+#cot den
+DEF	cot
+Transform {
+translation	0 0 0
+children [
+	Shape {
+		geometry Cylinder {
+		bottom TRUE
+		height 4
+		radius .1
+		side TRUE
+		top	TRUE
+		}
+		appearance Appearance {
+			material Material {
+				ambientIntensity 0
+				shininess 0
+			}
+		
+		}
+	}
+]
+}
+#thanh ngang
+Transform {
+rotation 0 0 1 1.57
+scale 1 .25 1
+translation	-.5 1.9 0
+children [
+USE	cot
+]
+}
+
+# cần bóng đèn
+	Transform {		
+		translation	-.9 1.6 .1 	
+		children [			
+			Shape {	 			
+				geometry Cylinder	{height .5, radius 0.05}
+				appearance Appearance {
+					material Material	{ diffuseColor 1 1 1}				
+				} 			
+			}			
+		] 	
+	}
+	# chụp bóng đèn 
+	Transform {		
+	  translation -.9 1.4 .1
+	  children [ 	  
+	      Shape {
+			  geometry Cone	{height 0.3, bottomRadius .6 } 		      
+			  appearance	Appearance { material Material 
+									{ diffuseColor 1 1 1}} 		  
+		  }		  
+	  ]		
+	}
+	#bongden
+	Transform {		
+	  translation -.9 1.2 .1
+	  scale	1.2 .4 1
+	  children [	  
+	      Shape { 		  
+		      geometry Sphere { radius 0.4}
+			  appearance Appearance{			   
+				  material Material {
+					  diffuseColor 1 .85 0
+					  specularColor .87 .25 .25
+					  ambientIntensity .157
+					  shininess 1
+				  }
+			  }			  
+		  }	  
+	  ]		
+	} 
+#tru
+Transform {
+translation	0 -2 0
+children [
+	Shape {geometry Box {size .3 .3 .3}
+		appearance Appearance {
+			material Material {
+				diffuseColor .61 .61 .61
+				specularColor .77 .76 .76
+				ambientIntensity .14
+				shininess .9
+			}
+		}
+	}
+
+]
+}

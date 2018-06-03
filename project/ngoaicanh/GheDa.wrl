@@ -1,0 +1,157 @@
+#VRML V2.0 utf8
+
+#Ghe da
+Transform {
+translation	0 0 0
+children [
+	#chan ghe
+	Transform {
+	translation	0 0 0
+	rotation 1 0 0 -.1
+	children [
+		Shape {
+			geometry Box {
+			size .2 1 .2}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\ChanGhe.PNG"}
+			}
+		}
+	]
+
+	}
+	Transform {
+	translation	0 0 -1.2
+	rotation 1 0 0 .1
+	children [
+		Shape {
+			geometry Box {
+			size .2 1 .2}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\ChanGhe.PNG"}
+			}
+		}
+	]
+
+	}
+	#chan ghe
+	Transform {
+	translation	3 0 0
+	rotation 1 0 0 -.1
+	children [
+		Shape {
+			geometry Box {
+			size .2 1 .2}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\ChanGhe.PNG"}
+			}
+		}
+	]
+
+	}
+
+	Transform {
+	translation	3 1 -1.25
+	rotation 1 0 0 -.1
+	children [
+		Shape {
+			geometry Box {
+			size .2 1 .15}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\ChanGhe.PNG"}
+			}
+		}
+	]
+
+	}
+		Transform {
+	translation	0 1 -1.25
+	rotation 1 0 0 -.1
+	children [
+		Shape {
+			geometry Box {
+			size .2 1 .15}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\ChanGhe.PNG"}
+			}
+		}
+	]
+
+	}
+
+	Transform {
+	translation	3 0 -1.2
+	rotation 1 0 0 .1
+	children [
+		Shape {
+			geometry Box {
+			size .2 1 .2}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\ChanGhe.PNG"}
+			}
+		}
+	]
+
+	}
+
+	Transform {
+	translation	3 .4 -.6
+	children [
+		Shape {
+			geometry Box {
+			size .2 .2 1}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\ChanGhe.PNG"}
+			}
+		}
+	]
+
+	}
+		Transform {
+	translation	0 .4 -.6
+	children [
+		Shape {
+			geometry Box {
+			size .2 .2 1}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\ChanGhe.PNG"}
+			}
+
+		}
+	]
+
+	}
+
+
+	#mat ghe
+	Transform {
+	translation	1.5 .6 -.4
+	children [
+		Shape {
+			geometry Box {size 4.5 .2 1.4}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\MatGhe.PNG"}
+			}
+		}
+
+	
+	]
+	}
+
+
+		Transform {
+	translation	1.5 1.7 -1.2
+	rotation 1 0 0 1.47
+	children [
+		Shape {
+			geometry Box {size 4.5 .1 1}
+			appearance Appearance {
+				texture	ImageTexture {url "Images\MatGhe.PNG"}
+			}
+		}
+
+	
+	]
+	}
+
+]
+}

@@ -1,0 +1,149 @@
+#VRML V2.0 utf8
+Transform {
+    translation	0 0 0
+    scale .5 .5 .5
+    children [
+		#nen nhua
+		Transform {
+            translation	0 -.5 -10
+            children [
+                Inline {url "nentrainhua.wrl"}
+            ]
+        }
+
+		#tuong rao
+		Transform {
+            translation	0 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+		Transform {
+            translation	4.1 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+		Transform {
+            translation	8.2 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+		Transform {
+            translation	12.4 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+		Transform {
+            translation	16.6 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+		Transform {
+            translation	-4.1 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+		Transform {
+            translation	-8.2 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+		Transform {
+            translation	-12.4 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+		Transform {
+            translation	-16.6 0 0
+            children [
+                Inline {url "TuongRao.wrl"}
+            ]
+        }
+
+
+		#cay 1
+		Transform {
+            translation	16 -.2 -12
+			scale 2 2 2 
+            children [
+                Inline {url "cay.wrl"}
+            ]
+        }
+		#cay 2
+		Transform {
+            translation	16 -.2 -18
+			scale 2 2 2 
+            children [
+                Inline {url "cay.wrl"}
+            ]
+        }
+		#cay 3
+		Transform {
+            translation	6 -.2 -2.5
+			scale 2 2 2 
+            children [
+                Inline {url "cay.wrl"}
+            ]
+        }
+		#cay 4
+		Transform {
+            translation	-1 -.2 -2.5
+			scale 2 2 2 
+            children [
+                Inline {url "cay.wrl"}
+            ]
+        }
+		#cay 5
+		Transform {
+            translation	-8 -.2 -2.5
+			scale 2 2 2 
+            children [
+                Inline {url "cay.wrl"}
+            ]
+        }
+	   	#cay 6
+		Transform {
+            translation	-15 -.2 -2.5
+			scale 2 2 2 
+            children [
+                Inline {url "cay.wrl"}
+            ]
+        }
+
+		#Ghe da 1
+		Transform {
+            translation	7.5 0 -6
+		    rotation 0 1 0 3.15
+			scale .8 .8 .8
+            children [
+                Inline {url "GheDa.wrl"}
+            ]
+        }
+		#Ghe da 2
+		Transform {
+            translation	.5 0 -6
+		    rotation 0 1 0 3.15
+			scale .8 .8 .8
+            children [
+                Inline {url "GheDa.wrl"}
+            ]
+        }
+		#Ghe da 3
+		Transform {
+            translation	-6.5 0 -6
+		    rotation 0 1 0 3.15
+			scale .8 .8 .8
+            children [
+                Inline {url "GheDa.wrl"}
+            ]
+        }
+
+	]
+}

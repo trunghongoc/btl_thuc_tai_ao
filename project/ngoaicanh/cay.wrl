@@ -1,0 +1,64 @@
+#VRML V2.0 utf8
+
+Transform {
+translation	0 0 0
+children [
+	Transform {
+		children [
+			Shape {
+				geometry Box {size 2 .3 2}
+				appearance Appearance {
+					texture	ImageTexture {
+						url	"images\Gach.png"
+					}
+				}
+			}
+		]
+	}
+
+	Transform {
+		translation	0 .15 0
+		children [
+			Shape {
+				geometry Box {size 1.5 .01 1.5}
+				appearance Appearance {
+					texture	ImageTexture {	
+						url	"images\Co.png"	 
+					}
+				}
+			}
+		]
+	}
+	Transform {
+	translation	0 2.5 0
+	children [
+		Shape {
+			geometry Cylinder {radius .2 height 5}
+			 	appearance Appearance {
+					texture	ImageTexture {	
+						url	"images\ThanCay.png" 
+					}
+				}
+		}
+	]
+	}
+
+
+	Transform {
+	translation	0 6.3 0
+	scale 1 1 1
+	children [
+		Shape {
+			geometry Sphere {  radius 1.5 }
+			appearance Appearance {
+					texture	ImageTexture {	
+						url	"images\TanCay.png"
+					}
+				}
+		
+		}
+	]
+	}
+
+]
+}

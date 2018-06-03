@@ -39,6 +39,15 @@ Transform {
     ]
 }
 
+#Ngoai canh
+Transform {
+    translation	0 -1.95 5
+    scale .7 .7 .7
+	children [
+		Inline {url "ngoaicanh/NgoaiCanh.wrl"}
+	]
+}
+
 # Background {
 #     skyAngle	[ 0.075, 0.1, 0.2, 1.309, 1.5708 ]					   #  thiết lập
 #     skyColor	[ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ] #  bầu trời
